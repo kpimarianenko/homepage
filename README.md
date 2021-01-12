@@ -1,4 +1,2 @@
 # Homepage
 My very own personal website. Basically this is just a résumé for one famous person.
-
-🧙Hocus-pocus!
