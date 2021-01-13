@@ -30,6 +30,12 @@ main:nth-last-child(3) {
     background-color: #434343;
 }
 
+.timeline a {
+    text-decoration: underline;
+    font-weight: 900;
+    color: #964a2f;
+}
+
 .contacts li a,
 .page {
     color: #d4f94c;
@@ -54,14 +60,6 @@ main:nth-last-child(3) {
 .page:hover {
     box-shadow: 0 0 150px 0 rgba(34, 186, 38, 0.7);
 }
-
-.timeline a {
-    text-decoration: underline;
-    font-weight: 900;
-    color: #964a2f;
-}
-
-
 
 .timeline strong {
     font-weight: 900;
