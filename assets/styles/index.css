@@ -55,6 +55,41 @@ a {
     font-weight: 900;
 }
 
+.avatar {
+    border-radius: 1em;
+}
+
+section {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #333333;
+    border-top: 3px solid #606060;
+    border-left: 3px solid #606060;
+}
+
+section .icon {
+    position: relative;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid #555555;
+    width: 5em;
+    height: 5em;
+}
+
+section h6 {
+    font-size: 1.3em;
+}
+
+.secondary h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 a.discord:hover {
     color: #5a72b0;
 }
@@ -86,5 +121,9 @@ a.twitter:hover, a.blizzard:hover {
 @media screen and (max-width: 780px) {
     .page:before {
         display: none;
+    }
+
+    main article {
+        margin: 0;
     }
 }
