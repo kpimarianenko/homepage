@@ -10,7 +10,7 @@ main {
 }
 
 main article {
-    margin: 5em auto;
+    margin: 7em auto;
 }
 
 main:nth-last-child(3) {
