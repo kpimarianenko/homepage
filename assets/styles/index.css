@@ -1,0 +1,176 @@
+body {
+    background: url("../images/bg.png");
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+main {
+    background: none;
+}
+
+main article {
+    margin: 7em auto;
+}
+
+main:nth-last-child(3) {
+    margin-bottom: 0;
+}
+
+.stackable.grid {
+    padding: 1em;
+}
+
+.divider, .divider.fat {
+    border-top: 0.357em solid #d4f94c;
+}
+
+.page {
+    background-color: #434343; 
+    color: #d4f94c;
+}
+
+.page:hover {
+    box-shadow: 0 0 150px 0 rgba(34, 186, 38, 0.7);
+}
+
+.contacts li a {
+    color: #d4f94c;
+}
+
+a {
+    color: #964a2f;
+}
+
+.contacts a {
+    cursor: pointer;
+}
+
+.timeline a {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.timeline strong {
+    font-weight: 900;
+}
+
+.avatar {
+    border-radius: 1em;
+}
+
+section {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color: #333333;
+    border-top: 3px solid #606060;
+    border-left: 3px solid #606060;
+}
+
+section .icon {
+    position: relative;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid #555555;
+    width: 5em;
+    height: 5em;
+}
+
+section h6 {
+    font-size: 1.3em;
+}
+
+.secondary h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+a.discord:hover {
+    color: #5a72b0;
+}
+
+a.instagram:hover {
+    color: #e9035f;
+}
+
+a.twitter:hover, a.blizzard:hover {
+    color: #1da1f2;
+}
+
+.page:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    right: 2em;
+    bottom: 2em;
+    border-color: inherit;
+    border-width: 1em;
+    border-style: solid;
+    pointer-events: none;
+    transition: border-color 0.2s ease-in-out;
+    border-color: #863a0f;
+}
+
+.avatar {
+    margin-bottom: 1em;
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button.active {
+    background-color: #964a2f;
+}
+
+button.active:hover {
+    background-color: #b66a4f;
+}
+
+button.inactive {
+    background-color: #3aa60f;
+}
+
+button.inactive:hover {
+    background-color: #5ac62f;
+}
+
+.meteor {
+    background: url("../images/meteor.gif");
+    background-size: cover;
+    position: fixed;
+    z-index: 5;
+}
+
+@media screen and (max-width: 780px) {
+    .page:before {
+        display: none;
+    }
+
+    main article {
+        margin: 0;
+    }
+}

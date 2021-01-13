@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
-    <title>Garrosh Hellscream's résumé</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <script src="./scripts/chaos.js"></script>
+    <title>Grommash Hellscream's résumé</title>
   </head>
   <body>
     <main>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div class="page">
           <div class="stackable grid">
             <div class="row">
               <div class="five wide center aligned column">
                 <div class="avatar-wrapper">
                   <object class="avatar" data="./assets/images/grom.png" role="img" aria-label="My profile picture"></object>
+                  <button id="chaos" class="inactive" onclick="toggleChaos()">Turn on the chaos</button>
                 </div>
               </div>
               <div class="eleven wide column">
@@ -65,157 +68,194 @@
             </div>
             <div class="row">
               <div class="ten wide column">
-                <h3>Experience</h3>
-                  <h6>Early history</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>23<sup>th</sup> December 1994</em></p>
-                      <p><strong>Becomes</strong> the chieftain of the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a></p>
-                    </li>
-                    <li>
-                      <p><em>14<sup>th</sup> February 1995</em></p>
-                      <p><a href="https://wow.gamepedia.com/Golka">Golka</a> <strong>gives</strong> birth to his son <a href="https://wow.gamepedia.com/Garrosh_Hellscream">Garrosh</a></p>
-                    </li>
-                    <li>
-                      <p><em>3<sup>th</sup> June 1995</em></p>
-                      <p><strong>Leads</strong> raids on ogre lands</p>
-                    </li>
-                    <li>
-                      <p><em>30<sup>th</sup> August 1995</em></p>
-                      <p>Grom is <strong>captured</strong> by the ogres</p>
-                    </li>
-                  </ul>
-                  <h6>Rise of the Horde</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>12<sup>th</sup> September 1994</em></p>
-                      <p>Grom <strong>was present</strong> at the <a href="https://wow.gamepedia.com/Kosh%27harg_celebration">Kosh'harg celebration</a> in Nagrand</p>
-                    </li>
-                    <li>
-                      <p><em>2<sup>th</sup> October 1994</em></p>
-                      <p>Grom <strong>opposed</strong> the leader of the <a href="https://wow.gamepedia.com/Frostwolf_clan">Frostwolf clan</a> to defend a new era of war and state and drank the blood of <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a></p>
-                    </li>
-                    <li>
-                      <p><em>28<sup>th</sup> October 1994</em></p>
-                      <p><strong>Invaded</strong> <a href="https://wow.gamepedia.com/Shattrath_City">Shattrath</a> against draenei</p>
-                    </li>
-                    <li>
-                      <p><em>13<sup>th</sup> November 1994</em></p>
-                      <p><strong>Fought</strong> against <a href="https://wow.gamepedia.com/Nobundo">Nobundo</a></p>
-                    </li>
-                  </ul>
-                  <h6>Beyond the Dark Portal</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>9<sup>th</sup> December 1995</em></p>
-                      <p>The Warsong clan <strong>was spared</strong> the defeats of the <a href="https://wow.gamepedia.com/Second_War">Second War</a> since <a href="https://wow.gamepedia.com/Gul%27dan">Gul'dan</a> <strong>manipulated</strong> Grom into staying behind on Draenor</p>
-                    </li>
-                    <li>
-                      <p><em>14<sup>th</sup> July 1996</em></p>
-                      <p>The Horde <strong>was defeated</strong> by the <a href="https://wow.gamepedia.com/Alliance_of_Lordaeron">Alliance of Lordaeron</a></p>
-                    </li>
-                    <li>
-                      <p><em>20<sup>th</sup> December 1998</em></p>
-                      <p>He alongside Kargath Bladefist <strong>were summoned</strong> to join the reformed <a href="https://wow.gamepedia.com/Horde">Horde</a></p>
-                    </li>
-                    <li>
-                      <p><em>15<sup>th</sup> February 1999</em></p>
-                      <p>Grom and Rexxar <strong>led</strong> the attack on <a href="https://wow.gamepedia.com/Nethergarde_Keep">Nethergarde Keep</a></p>
-                    </li>
-                    <li>
-                      <p><em>3<sup>th</sup> January 2000</em></p>
-                      <p>He <strong>battled</strong> against the <a href="https://wow.gamepedia.com/Alliance">Alliance</a> for the control of the Azerothian side of the <a href="https://wow.gamepedia.com/Dark_Portal">Dark Portal</a></p>
-                    </li>
-                  </ul>
-                  <h6>Revitalization of the Horde</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>2<sup>th</sup> December 2000</em></p>
-                      <p>Grom and the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> <strong>were forced</strong> into hiding in the wilds of <a href="https://wow.gamepedia.com/Lordaeron">Lordaeron</a></p>
-                    </li>
-                    <li>
-                      <p><em>12<sup>th</sup> March 2001</em></p>
-                      <p>Grom <strong>was forced</strong> to fight the demonic curse that had left him weakened and listless.</p>
-                    </li>
-                    <li>
-                      <p><em>11<sup>th</sup> April 2002</em></p>
-                      <p>Grom <strong>met</strong> a young chieftain named <a href="https://wow.gamepedia.com/Thrall">Thrall</a></p>
-                    </li>
-                  </ul>
-                  <h6>Reign of Chaos</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>3<sup>th</sup> June 2002</em></p>
-                      <p>Grom <strong>was captured</strong> by <a href="https://wow.gamepedia.com/Alliance">Alliance</a> forces until he was rescued by <a href="https://wow.gamepedia.com/Thrall">Thrall</a> and his forces</p>
-                    </li>
-                    <li>
-                      <p><em>15<sup>th</sup> August 2002</em></p>
-                      <p>Grom <strong>used</strong> <a href="https://wow.gamepedia.com/Alliance">Alliance</a> ships to travel the <a href="https://wow.gamepedia.com/Horde">Horde</a></p>
-                    </li>
-                  </ul>
-                  <h6>Invasion of Kalimdor</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>19<sup>th</sup> September 2001</em></p>
-                      <p>Grom and his <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> <strong>were separated</strong> from <a href="https://wow.gamepedia.com/Thrall">Thrall</a>'s fleet and made landfall on <a href="https://wow.gamepedia.com/Kalimdor">Kalimdor</a></p>
-                    </li>
-                    <li>
-                      <p><em>21<sup>th</sup> November 2001</em></p>
-                      <p>Grom could not contain his bloodlust and <strong>instigated</strong> attacks on the human encampments</p>
-                    </li>
-                    <li>
-                      <p><em>23<sup>th</sup> December 2001</em></p>
-                      <p>The <strong>fight</strong> with the demigod <a href="https://wow.gamepedia.com/Cenarius">Cenarius</a> and the appearance of the <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a></p>
-                    </li>
-                    <li>
-                      <p><em>5<sup>th</sup> April 2002</em></p>
-                      <p>By <strong>drinking</strong> the <a href="https://wow.gamepedia.com/Blood_of_Mannoroth"></a>Blood of Mannoroth</a>, the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> was once again susceptible to the vile pit lord's control</p>
-                    </li>
-                  </ul>
-                  <h6>Redemption and death</h6>
-                  <ul class="timeline">
-                    <li>
-                      <p><em>11<sup>th</sup> May 2002</em></p>
-                      <p><a href="https://wow.gamepedia.com/Thrall">Thrall</a> and Grom <strong>set out to hunt down</strong> <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> and located the vile demon in what is now <a href="https://wow.gamepedia.com/Demon_Fall_Canyon">Demon Fall Canyon</a> in <a href="https://wow.gamepedia.com/Ashenvale">Ashenvale</a></p>
-                    </li>
-                    <li>
-                      <p><em>12<sup>th</sup> May 2002</em></p>
-                      <p>Grom <strong>charged</strong> <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> and sank <a href="https://wow.gamepedia.com/Gorehowl">Gorehowl</a> into his chest, shattering the breastplate and slicing through to the infernal heart of the demon</p>
-                    </li>
-                    <li>
-                      <p><em>12<sup>th</sup> May 2002</em></p>
-                      <p>Exhausted by the infernal flame of <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> Grom <strong>dies</strong></p>
-                    </li>
-                  </ul>
+                <h4>Experience</h4>
+                  <section>
+                    <h6>Early history</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>23<sup>th</sup> December 1994</em></p>
+                        <p><strong>Becomes</strong> the chieftain of the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a></p>
+                      </li>
+                      <li>
+                        <p><em>14<sup>th</sup> February 1995</em></p>
+                        <p><a href="https://wow.gamepedia.com/Golka">Golka</a> <strong>gives</strong> birth to his son <a href="https://wow.gamepedia.com/Garrosh_Hellscream">Garrosh</a></p>
+                      </li>
+                      <li>
+                        <p><em>3<sup>th</sup> June 1995</em></p>
+                        <p><strong>Leads</strong> raids on ogre lands</p>
+                      </li>
+                      <li>
+                        <p><em>30<sup>th</sup> August 1995</em></p>
+                        <p>Grom is <strong>captured</strong> by the ogres</p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Rise of the Horde</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>12<sup>th</sup> September 1994</em></p>
+                        <p>Grom <strong>was present</strong> at the <a href="https://wow.gamepedia.com/Kosh%27harg_celebration">Kosh'harg celebration</a> in Nagrand</p>
+                      </li>
+                      <li>
+                        <p><em>2<sup>th</sup> October 1994</em></p>
+                        <p>Grom <strong>opposed</strong> the leader of the <a href="https://wow.gamepedia.com/Frostwolf_clan">Frostwolf clan</a> to defend a new era of war and state and drank the blood of <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a></p>
+                      </li>
+                      <li>
+                        <p><em>28<sup>th</sup> October 1994</em></p>
+                        <p><strong>Invaded</strong> <a href="https://wow.gamepedia.com/Shattrath_City">Shattrath</a> against draenei</p>
+                      </li>
+                      <li>
+                        <p><em>13<sup>th</sup> November 1994</em></p>
+                        <p><strong>Fought</strong> against <a href="https://wow.gamepedia.com/Nobundo">Nobundo</a></p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Beyond the Dark Portal</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>9<sup>th</sup> December 1995</em></p>
+                        <p>The Warsong clan <strong>was spared</strong> the defeats of the <a href="https://wow.gamepedia.com/Second_War">Second War</a> since <a href="https://wow.gamepedia.com/Gul%27dan">Gul'dan</a> <strong>manipulated</strong> Grom into staying behind on Draenor</p>
+                      </li>
+                      <li>
+                        <p><em>14<sup>th</sup> July 1996</em></p>
+                        <p>The Horde <strong>was defeated</strong> by the <a href="https://wow.gamepedia.com/Alliance_of_Lordaeron">Alliance of Lordaeron</a></p>
+                      </li>
+                      <li>
+                        <p><em>20<sup>th</sup> December 1998</em></p>
+                        <p>He alongside Kargath Bladefist <strong>were summoned</strong> to join the reformed <a href="https://wow.gamepedia.com/Horde">Horde</a></p>
+                      </li>
+                      <li>
+                        <p><em>15<sup>th</sup> February 1999</em></p>
+                        <p>Grom and Rexxar <strong>led</strong> the attack on <a href="https://wow.gamepedia.com/Nethergarde_Keep">Nethergarde Keep</a></p>
+                      </li>
+                      <li>
+                        <p><em>3<sup>th</sup> January 2000</em></p>
+                        <p>He <strong>battled</strong> against the <a href="https://wow.gamepedia.com/Alliance">Alliance</a> for the control of the Azerothian side of the <a href="https://wow.gamepedia.com/Dark_Portal">Dark Portal</a></p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Revitalization of the Horde</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>2<sup>th</sup> December 2000</em></p>
+                        <p>Grom and the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> <strong>were forced</strong> into hiding in the wilds of <a href="https://wow.gamepedia.com/Lordaeron">Lordaeron</a></p>
+                      </li>
+                      <li>
+                        <p><em>12<sup>th</sup> March 2001</em></p>
+                        <p>Grom <strong>was forced</strong> to fight the demonic curse that had left him weakened and listless.</p>
+                      </li>
+                      <li>
+                        <p><em>11<sup>th</sup> April 2002</em></p>
+                        <p>Grom <strong>met</strong> a young chieftain named <a href="https://wow.gamepedia.com/Thrall">Thrall</a></p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Reign of Chaos</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>3<sup>th</sup> June 2002</em></p>
+                        <p>Grom <strong>was captured</strong> by <a href="https://wow.gamepedia.com/Alliance">Alliance</a> forces until he was rescued by <a href="https://wow.gamepedia.com/Thrall">Thrall</a> and his forces</p>
+                      </li>
+                      <li>
+                        <p><em>15<sup>th</sup> August 2002</em></p>
+                        <p>Grom <strong>used</strong> <a href="https://wow.gamepedia.com/Alliance">Alliance</a> ships to travel the <a href="https://wow.gamepedia.com/Horde">Horde</a></p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Invasion of Kalimdor</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>19<sup>th</sup> September 2001</em></p>
+                        <p>Grom and his <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> <strong>were separated</strong> from <a href="https://wow.gamepedia.com/Thrall">Thrall</a>'s fleet and made landfall on <a href="https://wow.gamepedia.com/Kalimdor">Kalimdor</a></p>
+                      </li>
+                      <li>
+                        <p><em>21<sup>th</sup> November 2001</em></p>
+                        <p>Grom could not contain his bloodlust and <strong>instigated</strong> attacks on the human encampments</p>
+                      </li>
+                      <li>
+                        <p><em>23<sup>th</sup> December 2001</em></p>
+                        <p>The <strong>fight</strong> with the demigod <a href="https://wow.gamepedia.com/Cenarius">Cenarius</a> and the appearance of the <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a></p>
+                      </li>
+                      <li>
+                        <p><em>5<sup>th</sup> April 2002</em></p>
+                        <p>By <strong>drinking</strong> the <a href="https://wow.gamepedia.com/Blood_of_Mannoroth"></a>Blood of Mannoroth</a>, the <a href="https://wow.gamepedia.com/Warsong_clan">Warsong clan</a> was once again susceptible to the vile pit lord's control</p>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Redemption and death</h6>
+                    <ul class="timeline">
+                      <li>
+                        <p><em>11<sup>th</sup> May 2002</em></p>
+                        <p><a href="https://wow.gamepedia.com/Thrall">Thrall</a> and Grom <strong>set out to hunt down</strong> <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> and located the vile demon in what is now <a href="https://wow.gamepedia.com/Demon_Fall_Canyon">Demon Fall Canyon</a> in <a href="https://wow.gamepedia.com/Ashenvale">Ashenvale</a></p>
+                      </li>
+                      <li>
+                        <p><em>12<sup>th</sup> May 2002</em></p>
+                        <p>Grom <strong>charged</strong> <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> and sank <a href="https://wow.gamepedia.com/Gorehowl">Gorehowl</a> into his chest, shattering the breastplate and slicing through to the infernal heart of the demon</p>
+                      </li>
+                      <li>
+                        <p><em>12<sup>th</sup> May 2002</em></p>
+                        <p>Exhausted by the infernal flame of <a href="https://wow.gamepedia.com/Mannoroth">Mannoroth</a> Grom <strong>dies</strong></p>
+                      </li>
+                    </ul>
+                  </section>
               </div>
-              <div class="six wide column">
+              <div class="six wide column secondary">
                 <section>
                   <h3>Race</h3>
-                  <p class="tags small">Orc</p>
+                  <div>
+                    <p class="tags small">Orc</p>
+                    <img class="icon" src="./assets/images/orc.jpg">
+                  </div>
                 </section>
                 <section>
                   <h3>Gender</h3>
-                  <p class="tags small">Male</p>
+                  <div>
+                    <p class="tags small">Male</p>
+                    <img class="icon" src="./assets/images/male.jpg">
+                  </div>
                 </section>
                 <section>
                   <h3>Class</h3>
-                  <p class="tags small">Warrior, blademaster</p>
-                </section>
-                <section>
-                  <h3>Skin color</h3>
-                  <p class="tags small">Red (After he drank demon blood - green)</p>
+                  <div>
+                    <p class="tags small">Warrior, blademaster</p>
+                    <img class="icon" src="./assets/images/warrior.png">
+                    <img class="icon" src="./assets/images/blademaster.jpg">
+                  </div>
                 </section>
                 <section>
                   <h3>Weapon</h3>
-                  <p class="tags small">Gorehowl</p>
-                </section>
-                <section>
-                  <h3>Status</h3>
-                  <p class="tags small">Deceased (Aged 46)</p>
+                  <div>
+                    <p class="tags small">Gorehowl</p>
+                    <img class="icon" src="./assets/images/gorehowl.jpg">
+                  </div>
                 </section>
                 <section>
                   <h3>Affilations</h3>
-                  <p class="tags small">Horde, Warsong clan</p>
+                  <div>
+                    <p class="tags small">Horde, Warsong clan</p>
+                    <img class="icon" src="./assets/images/horde.png">
+                    <img class="icon" src="./assets/images/warsong.jpg">
+                  </div>
+                </section>
+                <section>
+                  <h3>Skin color</h3>
+                  <div>
+                    <p class="tags small">Red (After he drank demon blood - green)</p>
+                    <img class="icon" src="./assets/images/blood-curse.jpg">
+                  </div>
+                </section>
+                <section>
+                  <h3>Status</h3>
+                  <div>
+                    <p class="tags small">Killed by Mannoroth the Destructor (Aged 46)</p>
+                    <img class="icon" src="./assets/images/mannoroth.jpg">
+                  </div>
                 </section>
               </div>
             </div>
@@ -223,5 +263,6 @@
         </div>
       </article>
     </main>
+    <div id="meteors"></div>
   </body>
 </html>
