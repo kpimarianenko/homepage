@@ -56,7 +56,6 @@ const moveMeteors = () => {
         const right = parseInt(meteor.style.right) + velocity;
         const top = parseInt(meteor.style.top) + velocity;
         if(top > h) {
-            console.log(meteor)
             meteors.removeChild(meteor);
             deleteLastOne = true;
         }

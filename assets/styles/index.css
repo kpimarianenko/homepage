@@ -26,43 +26,32 @@ main:nth-last-child(3) {
 }
 
 .page {
-    background-color: #434343; 
-    color: #d4f94c;
+    background-color: #434343;
 }
 
 .page:hover {
     box-shadow: 0 0 150px 0 rgba(34, 186, 38, 0.7);
 }
 
-.contacts li a {
-    color: #d4f94c;
-}
-
-a {
-    color: #964a2f;
-}
-
-.contacts a {
-    cursor: pointer;
-}
-
 .timeline a {
     text-decoration: underline;
     font-weight: 900;
+    color: #964a2f;
+}
+
+.contacts li a, .page {
+    color: #d4f94c;
+    cursor: pointer;
 }
 
 .timeline strong {
     font-weight: 900;
 }
 
-.avatar {
-    border-radius: 1em;
-}
-
 section {
     margin: 1em 0;
     padding: 0.5em;
-    background-color: #333333;
+    background-color: #333;
     border-top: 3px solid #606060;
     border-left: 3px solid #606060;
 }
@@ -71,7 +60,7 @@ section .icon {
     position: relative;
     object-fit: cover;
     border-radius: 100%;
-    border: 5px solid #555555;
+    border: 5px solid #555;
     width: 5em;
     height: 5em;
 }
@@ -110,7 +99,6 @@ a.twitter:hover, a.blizzard:hover {
     top: 2em;
     right: 2em;
     bottom: 2em;
-    border-color: inherit;
     border-width: 1em;
     border-style: solid;
     pointer-events: none;
@@ -120,6 +108,7 @@ a.twitter:hover, a.blizzard:hover {
 
 .avatar {
     margin-bottom: 1em;
+    border-radius: 1em;
 }
 
 .avatar-wrapper {
