@@ -36,10 +36,13 @@ main:nth-last-child(3) {
     color: #964a2f;
 }
 
-.contacts li a,
-.page {
+.contacts li a {
     color: #d4f94c;
     cursor: pointer;
+}
+
+.page {
+    color: #d4f94c;
 }
 
 .page::before {
