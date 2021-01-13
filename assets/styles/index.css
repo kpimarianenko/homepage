@@ -118,6 +118,53 @@ a.twitter:hover, a.blizzard:hover {
     border-color: #863a0f;
 }
 
+.avatar {
+    margin-bottom: 1em;
+}
+
+.avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button.active {
+    background-color: #964a2f;
+}
+
+button.active:hover {
+    background-color: #b66a4f;
+}
+
+button.inactive {
+    background-color: #3aa60f;
+}
+
+button.inactive:hover {
+    background-color: #5ac62f;
+}
+
+.meteor {
+    background: url("../images/meteor.gif");
+    background-size: cover;
+    position: fixed;
+    z-index: 5;
+}
+
 @media screen and (max-width: 780px) {
     .page:before {
         display: none;
