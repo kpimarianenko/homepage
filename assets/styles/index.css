@@ -1,0 +1,19 @@
+.stackable.grid {
+    padding: 1em;
+}
+
+.page:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    right: 2em;
+    bottom: 2em;
+    border-color: inherit;
+    border-width: 1em;
+    border-style: solid;
+    pointer-events: none;
+    transition: border-color 0.2s ease-in-out;
+    border-color: midnightblue;
+}
