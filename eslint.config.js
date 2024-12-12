@@ -87,11 +87,6 @@ export default tseslint.config(
               group: 'internal',
               position: 'before',
             },
-            {
-              pattern: '~/**',
-              group: 'internal',
-              position: 'before',
-            },
           ],
           groups: [
             ['external', 'builtin'],
