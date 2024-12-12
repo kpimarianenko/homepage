@@ -9,7 +9,8 @@
     "lint": "eslint . --max-warnings=0",
     "preview": "vite preview",
     "prepare": "husky",
-    "type-check": "npx tsc --project tsconfig.json --noEmit"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "18.3.1",
@@ -28,6 +29,7 @@
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react-hooks": "5.0.0",
     "eslint-plugin-react-refresh": "0.4.14",
+    "gh-pages": "6.2.0",
     "globals": "15.12.0",
     "husky": "9.1.7",
     "lint-staged": "15.2.11",
