@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint . --max-warnings=0 | stylelint \"**/*.scss\"",
+    "lint": "eslint . --max-warnings=0 & stylelint \"**/*.scss\"",
     "preview": "vite preview",
     "prepare": "husky",
     "predeploy": "yarn build",
@@ -36,6 +36,7 @@
     "prettier": "3.4.2",
     "sass-embedded": "1.82.0",
     "stylelint": "16.11.0",
+    "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-standard-scss": "14.0.0",
     "typescript": "5.6.2",
     "typescript-eslint": "8.15.0",

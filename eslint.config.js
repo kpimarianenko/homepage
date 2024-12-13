@@ -73,6 +73,7 @@ export default tseslint.config(
           ignoreDeclarationSort: true,
         },
       ],
+      'import/no-default-export': 'error',
       'import/order': [
         'warn',
         {
@@ -101,6 +102,12 @@ export default tseslint.config(
           pathGroupsExcludedImportTypes: ['internal'],
         },
       ],
+    },
+  },
+  {
+    files: ['*.config.ts'],
+    rules: {
+      'import/no-default-export': 'off',
     },
   }
 );
