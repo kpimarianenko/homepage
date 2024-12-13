@@ -8,6 +8,7 @@ $primary-300: #9a9a9a;
 $primary-200: #bababa;
 $primary-100: #d6d6d6;
 $primary-50: #eee;
+$accent: #20d9ff;
 
 :export {
   primary900: $primary-900;
@@ -20,4 +21,5 @@ $primary-50: #eee;
   primary200: $primary-200;
   primary100: $primary-100;
   primary50: $primary-50;
+  accent: $accent;
 }

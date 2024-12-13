@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { HomePage } from '@/pages/home';
 import { BackgroundContainer } from '@/uikit/background-container';
 import '@/styles/reset.scss';

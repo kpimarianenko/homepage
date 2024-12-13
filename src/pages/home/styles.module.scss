@@ -1,0 +1,62 @@
+@use '@/styles/colors.module';
+
+.container {
+  padding: 5rem 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.general {
+  height: 100%;
+
+  .name {
+    letter-spacing: 1.5px;
+    color: colors.$primary-50;
+    margin-bottom: 0.5rem;
+  }
+
+  .position {
+    font-weight: 500;
+    color: colors.$primary-100;
+    margin-bottom: 1.5rem;
+  }
+
+  .short-description {
+    max-width: 70%;
+  }
+}
+
+.details {
+  section {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about {
+    p {
+      margin-bottom: 1rem;
+    }
+
+    span {
+      cursor: pointer;
+      color: colors.$primary-50;
+      font-weight: 600;
+      transition: all 0.2s;
+
+      &:hover {
+        color: colors.$accent;
+      }
+    }
+  }
+
+  .timeline {
+    h2 {
+      color: colors.$primary-50;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

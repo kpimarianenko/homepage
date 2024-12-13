@@ -8,3 +8,4 @@ export const primary300: string;
 export const primary200: string;
 export const primary100: string;
 export const primary50: string;
+export const accent: string;
