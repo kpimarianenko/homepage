@@ -2,7 +2,7 @@ import { PropsWithChildren, useCallback, useEffect, useRef } from 'react';
 
 import { useCursorPosition } from '@/hooks/useCursorPosition';
 import { useDimensions } from '@/hooks/useDimensions';
-import { primaryColor } from '@/styles/colors.module.scss';
+import colors from '@/styles/colors.module.scss';
 import './styles.scss';
 
 interface BackgroundContainerProps extends PropsWithChildren {
@@ -82,7 +82,7 @@ export const BackgroundContainer: React.FC<BackgroundContainerProps> = ({
       return;
     }
 
-    ctx.fillStyle = primaryColor;
+    ctx.fillStyle = colors.primary900;
     ctx.fillRect(0, 0, width, height);
 
     drawPoints();
