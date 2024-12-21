@@ -1,0 +1,36 @@
+@use '@/styles/colors.module';
+
+.container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: colors.$primary-300;
+  margin-top: 1.5rem;
+
+  .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: colors.$primary-300;
+    transition: fill 0.2s;
+  }
+
+  p {
+    overflow: hidden;
+    text-wrap: nowrap;
+    width: 0;
+    padding-left: 0.5rem;
+    transition: flex-grow 1.5s;
+  }
+
+  &:hover {
+    color: colors.$primary-50;
+
+    .icon {
+      fill: colors.$primary-50;
+    }
+
+    p {
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,4 +1,9 @@
+import { DocumentIcon } from '@/assets/icons/document';
+import { EnvelopeIcon } from '@/assets/icons/envelope';
+import { GitHubIcon } from '@/assets/icons/github';
+import { LinkedInIcon } from '@/assets/icons/linkedin';
 import { i18n } from '@/services/i18n';
+import { SocialsLink } from './components/socials-link';
 import { Tag } from './components/tag';
 import { TimelineItem, TimelineItemProps } from './components/timeline-item';
 import styles from './styles.module.scss';
@@ -48,7 +53,7 @@ export const HomePage: React.FC = () => {
     'React',
     'React Native',
     'HTML',
-    'CSS',
+    'CSS/SCSS',
     'Redux',
     'Redux Toolkit',
     'GraphQL/Apollo',
@@ -80,6 +85,24 @@ export const HomePage: React.FC = () => {
         <h1 className={styles.name}>{i18n.t('name')}</h1>
         <h3 className={styles.position}>{i18n.t('position')}</h3>
         <p className={styles['short-description']}>{i18n.t('short-description')}</p>
+        <div className={styles.links}>
+          <SocialsLink
+            title={i18n.t('socials.mail')}
+            url='mailto:kpimarianenko@gmail.com'
+            Icon={EnvelopeIcon}
+          />
+          <SocialsLink title={i18n.t('socials.cv')} url='/homepage/cv.pdf' Icon={DocumentIcon} />
+          <SocialsLink
+            title={i18n.t('socials.linkedin')}
+            url='https://www.linkedin.com/in/roman-marianenko-72446325a/'
+            Icon={LinkedInIcon}
+          />
+          <SocialsLink
+            title={i18n.t('socials.github')}
+            url='https://github.com/kpimarianenko'
+            Icon={GitHubIcon}
+          />
+        </div>
       </aside>
       <main className={styles.details}>
         <section className={styles.about}>

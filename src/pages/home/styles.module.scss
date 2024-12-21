@@ -3,16 +3,19 @@
 $vertical-gap: 5rem;
 
 .container {
-  margin: $vertical-gap 0;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .general {
+  display: flex;
+  flex-direction: column;
   align-self: start;
   position: sticky;
-  top: $vertical-gap;
+  padding: $vertical-gap 0;
+  height: 100vh;
+  top: 0;
 
   .name {
     letter-spacing: 1.5px;
@@ -29,9 +32,18 @@ $vertical-gap: 5rem;
   .short-description {
     max-width: 70%;
   }
+
+  .links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 
 .details {
+  padding: $vertical-gap 0;
+
   section {
     margin-bottom: 4rem;
 
