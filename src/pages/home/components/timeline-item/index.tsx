@@ -1,4 +1,4 @@
-import { Link } from '@/uikit/link';
+import { Link } from '@/pages/home/components/link';
 import styles from './styles.module.scss';
 
 export interface TimelineItemProps {

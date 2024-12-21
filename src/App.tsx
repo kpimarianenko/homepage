@@ -1,5 +1,5 @@
+import { BackgroundContainer } from '@/components/background-container';
 import { HomePage } from '@/pages/home';
-import { BackgroundContainer } from '@/uikit/background-container';
 import '@/styles/reset.scss';
 import '@/styles/main.scss';
 
