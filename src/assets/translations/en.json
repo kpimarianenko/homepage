@@ -27,6 +27,11 @@
     "computools": "Computools",
     "computools-description": "Provided support and feature enhancements for a mobile beauty app and a TikTok-style application. Also contributed to development of a music web application from scratch."
   },
+  "tech-stack": {
+    "title": "Tech Stack",
+    "core-skills": "Core Skills",
+    "secondary-skills": "Technologies I am familiar with"
+  },
   "month": {
     "jan": "Jan",
     "feb": "Feb",

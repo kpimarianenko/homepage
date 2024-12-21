@@ -1,0 +1,9 @@
+@use '@/styles/colors.module';
+
+.tag {
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  color: colors.$accent-600;
+  background-color: rgba(colors.$accent-600, 0.25);
+  white-space: nowrap;
+}

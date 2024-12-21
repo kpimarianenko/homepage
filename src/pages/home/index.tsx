@@ -1,4 +1,5 @@
 import { i18n } from '@/services/i18n';
+import { Tag } from './components/tag';
 import { TimelineItem, TimelineItemProps } from './components/timeline-item';
 import styles from './styles.module.scss';
 
@@ -41,7 +42,37 @@ export const HomePage: React.FC = () => {
     },
   ];
 
-  const renderTimelineItem = (item: TimelineItemProps) => <TimelineItem {...item} />;
+  const coreSkills = [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'React Native',
+    'HTML',
+    'CSS',
+    'Redux',
+    'Redux Toolkit',
+    'GraphQL/Apollo',
+    'Git',
+  ];
+
+  const secondarySkills = [
+    'Vite',
+    'NextJS',
+    'MobX',
+    'NodeJS',
+    'Express',
+    'MongoDB/mongoose',
+    'SQL',
+    'Sequelize',
+    'Jest',
+    'Docker',
+  ];
+
+  const renderTimelineItem = (item: TimelineItemProps) => (
+    <TimelineItem key={item.organization} {...item} />
+  );
+
+  const renderTag = (item: string) => <Tag key={item} title={item} />;
 
   return (
     <div className={styles.container}>
@@ -63,6 +94,13 @@ export const HomePage: React.FC = () => {
         <section className={styles.timeline}>
           <h2>{i18n.t('timeline.title')}</h2>
           {timelineData.map(renderTimelineItem)}
+        </section>
+        <section className={styles['tech-stack']}>
+          <h2>{i18n.t('tech-stack.title')}</h2>
+          <h4>{i18n.t('tech-stack.core-skills')}</h4>
+          <div className={styles['tag-list']}>{coreSkills.map(renderTag)}</div>
+          <h4>{i18n.t('tech-stack.secondary-skills')}</h4>
+          <div className={styles['tag-list']}>{secondarySkills.map(renderTag)}</div>
         </section>
       </main>
     </div>
