@@ -9,7 +9,7 @@ interface LinkProps {
 }
 
 export const Link: React.FC<LinkProps> = ({ title, url, className }) => (
-  <a href={url} className={cn(styles.link, className)}>
+  <a href={url} target='_blank' className={cn(styles.link, className)}>
     <LinkIcon className={styles.icon} />
     {title}
   </a>

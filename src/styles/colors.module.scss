@@ -8,7 +8,16 @@ $primary-300: #9a9a9a;
 $primary-200: #bababa;
 $primary-100: #d6d6d6;
 $primary-50: #eee;
-$accent: #20d9ff;
+$accent-900: #00a9ff;
+$accent-800: #3db2ff;
+$accent-700: #5bbbff;
+$accent-600: #73c4ff;
+$accent-500: #89cdff;
+$accent-400: #9ed6ff;
+$accent-300: #b2deff;
+$accent-200: #c5e7ff;
+$accent-100: #d9efff;
+$accent-50: #ecf7ff;
 
 :export {
   primary900: $primary-900;
@@ -21,5 +30,14 @@ $accent: #20d9ff;
   primary200: $primary-200;
   primary100: $primary-100;
   primary50: $primary-50;
-  accent: $accent;
+  accent900: $accent-900;
+  accent800: $accent-800;
+  accent700: $accent-700;
+  accent600: $accent-600;
+  accent500: $accent-500;
+  accent400: $accent-400;
+  accent300: $accent-300;
+  accent200: $accent-200;
+  accent100: $accent-100;
+  accent50: $accent-50;
 }

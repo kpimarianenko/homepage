@@ -1,10 +1,11 @@
 import { Link } from '@/uikit/link';
 import styles from './styles.module.scss';
 
-interface TimelineItemProps {
+export interface TimelineItemProps {
   period: string;
   title: string;
   organization: string;
+  url: string;
   description: string;
 }
 
@@ -12,6 +13,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   period,
   title,
   organization,
+  url,
   description,
 }) => (
   <div className={styles.container}>
@@ -21,7 +23,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
     </div>
     <div className={styles.content}>
       <h3>{title}</h3>
-      <Link title={organization} url='google.com' />
+      <Link title={organization} url={url} />
       <p>{description}</p>
     </div>
   </div>
