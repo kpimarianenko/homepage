@@ -1,0 +1,60 @@
+@use '@/styles/colors.module';
+
+$arrow-size: 0.5rem;
+$button-size: 1.75rem;
+
+.container {
+  position: relative;
+  max-width: $button-size;
+  max-height: $button-size;
+
+  .button {
+    position: relative;
+    width: 100%;
+    height: $button-size;
+    padding: 0.125rem 0 0 1px;
+    background-color: colors.$primary-900;
+    border: 1px solid colors.$primary-300;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      right: -1px;
+      border: 0.3rem solid colors.$primary-300;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: colors.$primary-50;
+      border-color: colors.$primary-50;
+
+      &::after {
+        border-right-color: colors.$primary-50;
+        border-bottom-color: colors.$primary-50;
+      }
+    }
+  }
+
+  .dropdown {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: $button-size;
+    background-color: colors.$primary-900;
+    border: 1px solid colors.$primary-300;
+    border-radius: 0.3rem;
+  }
+
+  &:hover {
+    .dropdown {
+      visibility: visible;
+    }
+  }
+}

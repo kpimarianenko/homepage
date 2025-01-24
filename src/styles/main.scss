@@ -1,6 +1,10 @@
-@import '@/styles/colors.module';
+@use '@/styles/colors.module';
 
 html {
-  font-family: Poppins, sans-serif;
-  color: $secondary-color;
+  font-family: Inter, sans-serif;
+  color: colors.$primary-200;
+}
+
+h1 {
+  font-size: 2.5rem;
 }

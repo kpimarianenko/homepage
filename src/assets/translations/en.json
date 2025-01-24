@@ -1,0 +1,56 @@
+{
+  "name": "Roman Marianenko",
+  "position": "React Front End Developer / React Native Developer",
+  "short-description": "Hey, I am Roman Marianenko. I create accessible and responsive experiences for the web and mobile.",
+  "easter-egg": "Wake the f**k up, samurai!\nWe have a project to deploy.",
+  "socials": {
+    "mail": "Mail Me",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "cv": "Résumé"
+  },
+  "about": {
+    "p1": "I'm a developer who thrives on learning new skills and taking on challenges. I pride myself on being punctual and dependable, with the versatility to work seamlessly in a team or tackle tasks independently. I enjoy creating solutions that make an impact, and I’m always eager to grow both personally and professionally.",
+    "p2-1": "Outside of work, I’m a big fan of games — whether it’s strategizing over a board game, diving into immersive worlds on my PC, or losing myself in a ",
+    "p2-2": "sprawling futuristic city full of neon lights and big dreams",
+    "p2-3": ". These hobbies fuel my creativity and keep me inspired.",
+    "p3": "I’m currently on the lookout for my next professional adventure and can’t wait to contribute my skills and passion to an innovative team. Let’s build something awesome together!"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "degree": "Bachelors Degree",
+    "kpi": "Kyiv Polytechnic Institute",
+    "kpi-description": "Solid academic background from the Faculty of Applied Math, with expertise in problem-solving, algorithm design and web-development.",
+    "ideathon": "Smart City Ideathon",
+    "social-tech": "SocialTech",
+    "ideathon-description": "Achieved victory at the Smart City Ideathon, showcasing innovative problem-solving and teamwork skills.",
+    "binary-studio-winter-academy": "Binary Studio Winter Academy",
+    "binary-studio-academy": "Binary Studio Academy",
+    "binary-studio-academy-description": "Gained extensive knowledge in both Front-End and Back-End development.",
+    "binary-studio-position": "React Native Developer",
+    "binary-studio": "Binary Studio",
+    "binary-studio-description": "Gained first commercial experience by contributing to the development of a mobile application, focusing on implementing and optimizing major features and creating a construction management application from scratch.",
+    "computools-position": "React and React Native Developer",
+    "computools": "Computools",
+    "computools-description": "Provided support and feature enhancements for a mobile beauty app and a TikTok-style application. Also contributed to development of a music web application from scratch."
+  },
+  "tech-stack": {
+    "title": "Tech Stack",
+    "core-skills": "Core Skills",
+    "secondary-skills": "Technologies I am familiar with"
+  },
+  "month": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  }
+}

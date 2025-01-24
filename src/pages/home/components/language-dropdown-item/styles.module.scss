@@ -1,0 +1,23 @@
+@use '@/styles/colors.module';
+
+.item {
+  cursor: pointer;
+  line-height: 1.75rem;
+  font-size: 0.75rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid colors.$primary-300;
+  text-transform: uppercase;
+  transition: color 0.2s;
+
+  &.selected {
+    background-color: colors.$primary-700;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    color: colors.$primary-50;
+  }
+}

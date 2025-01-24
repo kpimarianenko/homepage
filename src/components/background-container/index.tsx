@@ -2,8 +2,8 @@ import { PropsWithChildren, useCallback, useEffect, useRef } from 'react';
 
 import { useCursorPosition } from '@/hooks/useCursorPosition';
 import { useDimensions } from '@/hooks/useDimensions';
-import { primaryColor } from '@/styles/colors.module.scss';
-import './styles.scss';
+import colors from '@/styles/colors.module.scss';
+import styles from './styles.module.scss';
 
 interface BackgroundContainerProps extends PropsWithChildren {
   pointSize?: number;
@@ -82,7 +82,7 @@ export const BackgroundContainer: React.FC<BackgroundContainerProps> = ({
       return;
     }
 
-    ctx.fillStyle = primaryColor;
+    ctx.fillStyle = colors.primary900;
     ctx.fillRect(0, 0, width, height);
 
     drawPoints();
@@ -90,8 +90,13 @@ export const BackgroundContainer: React.FC<BackgroundContainerProps> = ({
 
   return (
     <>
-      <canvas ref={canvas} id='background' width={dimensions.width} height={dimensions.height} />
-      {children}
+      <canvas
+        ref={canvas}
+        id={styles.background}
+        width={dimensions.width}
+        height={dimensions.height}
+      />
+      <div className={styles.container}>{children}</div>
     </>
   );
 };
