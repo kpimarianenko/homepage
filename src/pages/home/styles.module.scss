@@ -41,6 +41,42 @@ $vertical-gap: 5rem;
   }
 }
 
+.easter-egg {
+  position: fixed;
+  display: flex;
+  left: -4rem;
+  bottom: 0;
+  transform: translate(-100%, 50%);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+
+  img {
+    width: 32rem;
+    transform: rotate(7deg);
+  }
+
+  p {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Rock Salt', serif;
+    font-size: 1.5rem;
+    color: colors.$primary-50;
+    white-space: preserve nowrap;
+    left: 24rem;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(0, 0.65, 0.65, 1);
+  }
+
+  &.visible {
+    z-index: 1;
+    transform: translate(0, 0);
+
+    p {
+      opacity: 1;
+    }
+  }
+}
+
 .details {
   padding: $vertical-gap 0;
 

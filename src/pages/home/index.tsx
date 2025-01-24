@@ -1,7 +1,12 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+
+import EasterEggAudio from '@/assets/audio/easter-egg.mp3';
 import { DocumentIcon } from '@/assets/icons/document';
 import { EnvelopeIcon } from '@/assets/icons/envelope';
 import { GitHubIcon } from '@/assets/icons/github';
 import { LinkedInIcon } from '@/assets/icons/linkedin';
+import EasterEggImage from '@/assets/images/easter-egg.png';
+import { cn } from '@/helpers/styles';
 import { i18n } from '@/services/i18n';
 import { SocialsLink } from './components/socials-link';
 import { Tag } from './components/tag';
@@ -9,6 +14,28 @@ import { TimelineItem, TimelineItemProps } from './components/timeline-item';
 import styles from './styles.module.scss';
 
 export const HomePage: React.FC = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const [isEasterEggEnabled, setIsEasterEggEnabled] = useState(false);
+
+  const enableEasterEgg = useCallback(() => {
+    setIsEasterEggEnabled(true);
+
+    if (audioRef.current) {
+      audioRef.current.volume = 0.1;
+      audioRef.current.play();
+    }
+  }, []);
+
+  const disableEasterEgg = useCallback(() => {
+    setIsEasterEggEnabled(false);
+
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+  }, []);
+
   const timelineData: TimelineItemProps[] = [
     {
       period: `${i18n.t('month.sep')} 2018 - ${i18n.t('month.jun')} 2022`,
@@ -79,6 +106,10 @@ export const HomePage: React.FC = () => {
 
   const renderTag = (item: string) => <Tag key={item} title={item} />;
 
+  useEffect(() => {
+    audioRef.current?.click();
+  }, []);
+
   return (
     <div className={styles.container}>
       <aside className={styles.general}>
@@ -109,7 +140,9 @@ export const HomePage: React.FC = () => {
           <p>{i18n.t('about.p1')}</p>
           <p>
             {i18n.t('about.p2-1')}
-            <span>{i18n.t('about.p2-2')}</span>
+            <span onClick={enableEasterEgg} onMouseLeave={disableEasterEgg}>
+              {i18n.t('about.p2-2')}
+            </span>
             {i18n.t('about.p2-3')}
           </p>
           <p>{i18n.t('about.p3')}</p>
@@ -126,6 +159,11 @@ export const HomePage: React.FC = () => {
           <div className={styles['tag-list']}>{secondarySkills.map(renderTag)}</div>
         </section>
       </main>
+      <div className={cn(styles['easter-egg'], isEasterEggEnabled && styles['visible'])}>
+        <audio ref={audioRef} src={EasterEggAudio} playsInline={true} webkit-playsinline='true' />
+        <img src={EasterEggImage} className={styles['eg-image']} />
+        <p>{i18n.t('easter-egg')}</p>
+      </div>
     </div>
   );
 };

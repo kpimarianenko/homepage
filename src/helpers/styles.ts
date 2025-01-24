@@ -1,1 +1,2 @@
-export const cn = (...classNames: (string | undefined | null)[]) => classNames.join(' ');
+export const cn = (...classNames: (string | undefined | null | false)[]) =>
+  classNames.filter(c => !!c).join(' ');
