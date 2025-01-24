@@ -8,6 +8,7 @@ import { LinkedInIcon } from '@/assets/icons/linkedin';
 import EasterEggImage from '@/assets/images/easter-egg.png';
 import { cn } from '@/helpers/styles';
 import { i18n } from '@/services/i18n';
+import { LanguageDropdown } from './components/language-dropdown';
 import { SocialsLink } from './components/socials-link';
 import { Tag } from './components/tag';
 import { TimelineItem, TimelineItemProps } from './components/timeline-item';
@@ -22,7 +23,7 @@ export const HomePage: React.FC = () => {
     setIsEasterEggEnabled(true);
 
     if (audioRef.current) {
-      audioRef.current.volume = 0.1;
+      audioRef.current.volume = 0.03;
       audioRef.current.play();
     }
   }, []);
@@ -117,6 +118,11 @@ export const HomePage: React.FC = () => {
         <h3 className={styles.position}>{i18n.t('position')}</h3>
         <p className={styles['short-description']}>{i18n.t('short-description')}</p>
         <div className={styles.links}>
+          <LanguageDropdown
+            languages={i18n.languages}
+            selectedLanguage={i18n.currentLanguage}
+            onLanguageChange={i18n.changeLanguage}
+          />
           <SocialsLink
             title={i18n.t('socials.mail')}
             url='mailto:kpimarianenko@gmail.com'

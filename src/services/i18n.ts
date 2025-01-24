@@ -23,12 +23,14 @@ type TOptions = {
 
 abstract class I18N {
   public abstract get currentLanguage(): LanguageCode;
+  public abstract readonly languages: LanguageCode[];
   public abstract t(key: string): string;
   public abstract changeLanguage(code: LanguageCode): void;
 }
 
 class I18Next extends I18N {
   private static languageLocalStorageCode = 'lng';
+  public readonly languages = Object.keys(translations) as LanguageCode[];
 
   public get currentLanguage() {
     return i18next.language as LanguageCode;
@@ -38,7 +40,7 @@ class I18Next extends I18N {
     super();
 
     const resources = Object.entries(translations).reduce<I18NextResources>((acc, [key, value]) => {
-      acc[key as LanguageCode] = { translation: value };
+      acc[key as LanguageCode] = { translation: value as Translation };
       return acc;
     }, {});
 
@@ -62,6 +64,8 @@ class I18Next extends I18N {
       if (!err) {
         localStorage.setItem(I18Next.languageLocalStorageCode, code);
       }
+
+      window.location.reload();
     });
   };
 }

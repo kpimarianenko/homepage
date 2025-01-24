@@ -44,6 +44,13 @@ export default tseslint.config(
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       'prettier/prettier': 'error',
       'no-console': 'warn',
+      '@typescript-eslint/array-type': [
+        'error',
+        {
+          default: 'array',
+          readonly: 'array',
+        },
+      ],
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
