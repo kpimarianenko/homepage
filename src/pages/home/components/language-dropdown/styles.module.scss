@@ -44,6 +44,7 @@ $button-size: 1.75rem;
 
   .dropdown {
     visibility: hidden;
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: $button-size;
