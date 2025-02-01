@@ -1,4 +1,5 @@
 @use '@/styles/colors.module';
+@use '@/styles/helpers.module';
 
 html {
   font-family: Inter, sans-serif;
@@ -7,4 +8,28 @@ html {
 
 h1 {
   font-size: 2.5rem;
+}
+
+@include helpers.lg-screen {
+  html {
+    font-size: 15px;
+  }
+}
+
+@include helpers.md-screen {
+  html {
+    font-size: 14px;
+  }
+}
+
+@include helpers.sm-screen {
+  html {
+    font-size: 13px;
+  }
+}
+
+@include helpers.xs-screen {
+  html {
+    font-size: 12px;
+  }
 }

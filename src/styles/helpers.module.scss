@@ -1,0 +1,50 @@
+@use 'sass:map';
+
+$xl: 'xl';
+$lg: 'lg';
+$md: 'md';
+$sm: 'sm';
+$xs: 'xs';
+$screen-sizes: (
+  $xl: 1600px,
+  $lg: 1200px,
+  $md: 1024px,
+  $sm: 768px,
+  $xs: 480px,
+);
+
+@mixin screen-size($size) {
+  @media (width <= map.get($screen-sizes, $size)) {
+    @content;
+  }
+}
+
+@mixin xs-screen {
+  @include screen-size($xs) {
+    @content;
+  }
+}
+
+@mixin sm-screen {
+  @include screen-size($sm) {
+    @content;
+  }
+}
+
+@mixin md-screen {
+  @include screen-size($md) {
+    @content;
+  }
+}
+
+@mixin lg-screen {
+  @include screen-size($lg) {
+    @content;
+  }
+}
+
+@mixin xl-screen {
+  @include screen-size($xl) {
+    @content;
+  }
+}
